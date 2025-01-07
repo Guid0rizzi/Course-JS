@@ -35,6 +35,10 @@ for (let chave in pessoa3) {
   console.log(chave);
 }
 //------------------------------------------------------------------------
-/**
- * Factory functions / Constructors functions/ Classes (são todos moldes para criar algo)
- */
+// Factory functions / Constructors functions/ Classes (são todos moldes para criar algo)
+function PessoaContructor(nome, sobrenome) {
+  this.nome = nome;
+  this.sobrenome = sobrenome;
+}
+const pessoa4 = new PessoaContructor("Leonardo", "Moreira");
+console.log(pessoa4);
